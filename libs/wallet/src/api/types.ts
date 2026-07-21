@@ -21,6 +21,7 @@ export enum ConnectionType {
   METAMASK = 'METAMASK',
   GNOSIS_SAFE = 'GNOSIS_SAFE',
   TREZOR = 'TREZOR',
+  STELLAR_SNAP = 'STELLAR_SNAP',
 }
 
 export interface WalletInfo {
