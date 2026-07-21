@@ -2,6 +2,7 @@ import { isMobile } from '@cowprotocol/common-utils'
 
 import { default as MetamaskImage } from '../../api/assets/metamask.png'
 import CoinbaseWalletIcon from '../assets/coinbase.svg'
+import StellarSnapIcon from '../assets/stellar.svg'
 import TrezorIcon from '../assets/trezor.svg'
 import WalletConnectIcon from '../assets/walletConnectIcon.svg'
 import { ConnectionType } from '../types'
@@ -14,6 +15,7 @@ const connectionTypeToName: Record<ConnectionType, string> = {
   [ConnectionType.NETWORK]: 'Network',
   [ConnectionType.GNOSIS_SAFE]: 'Safe',
   [ConnectionType.TREZOR]: 'Trezor',
+  [ConnectionType.STELLAR_SNAP]: 'Stellar Snap',
 }
 
 const IDENTICON_KEY = 'Identicon'
@@ -26,6 +28,7 @@ const connectionTypeToIcon: Record<ConnectionType, 'Identicon' | string> = {
   [ConnectionType.COINBASE_WALLET]: CoinbaseWalletIcon,
   [ConnectionType.TREZOR]: TrezorIcon,
   [ConnectionType.WALLET_CONNECT_V2]: WalletConnectIcon,
+  [ConnectionType.STELLAR_SNAP]: StellarSnapIcon,
 }
 
 export function getConnectionIcon(connectionType: ConnectionType): string {

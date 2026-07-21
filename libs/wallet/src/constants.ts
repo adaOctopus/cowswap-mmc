@@ -14,3 +14,9 @@ export const RABBY_RDNS = 'io.rabby'
 export const BRAVE_WALLET_RDNS = 'com.brave.wallet'
 
 export const WATCH_ASSET_SUPPORED_WALLETS = [METAMASK_RDNS]
+
+// MetaMask Snap id used to enable Stellar network support from within the same injected wallet
+// used to connect to CoW Swap. See https://docs.metamask.io/snaps/ for more details.
+export const STELLAR_SNAP_ID = 'npm:@stellar/snap'
+
+export const STELLAR_SNAP_VERSION = 'latest'
